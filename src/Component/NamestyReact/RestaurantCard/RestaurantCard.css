@@ -1,0 +1,27 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.card-details {
+    border: solid 1px grey;
+    margin: 5px;
+    width: 20%;
+}
+
+.search-bar {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.card-details img {
+    width: 100%;
+    height: 200px;
+}
+
+.card-details .child-header {
+    margin: 10px;
+    font-size: 15px;
+}

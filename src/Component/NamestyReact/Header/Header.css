@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px gray;
+}
+
+.header .logo {
+    width: 5%;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.menu-list li {
+    margin-right: 10px;
+}
