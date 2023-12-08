@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { SWIGGY_API_URL } from '../API/Constant';
+import { SWIGGY_API_URL } from '../Constant/Constant';
 
 const useRestuarant = () => {
     const [allRestuarant, setAllRestuarant] = useState([]);
@@ -20,7 +20,7 @@ const useRestuarant = () => {
 
                     // initialize checkData for Swiggy Restaurant data
                     let checkData = json?.data?.cards[i]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-                    console.log(checkData, "checkData");
+
                     // if checkData is not undefined then return it
                     if (checkData !== undefined) {
                         return checkData;

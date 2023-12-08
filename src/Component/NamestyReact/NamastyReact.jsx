@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './Header/Header';
-import RestaurantCard from './RestaurantCard/RestaurantCard';
 import Footer from './Footer/Footer';
+import Home from './Home/Home';
 
 const NamastReact = () => {
     return (
         <div>
             <Header />
-            <RestaurantCard />
+            <Home />
             <Footer />
         </div>
     )

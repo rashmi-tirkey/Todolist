@@ -1,0 +1,13 @@
+.restaurant-menus {
+    display: flex;
+    color: white;
+    background-color: black;
+    justify-content: center;
+}
+.items-name{
+    
+}
+.menu-img img{
+    width: 50%;
+    margin-top: 20px;
+}
