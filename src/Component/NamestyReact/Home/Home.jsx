@@ -30,28 +30,30 @@ const Home = () => {
 
     return (
         <>
-            <div className='search-bar'>
+            <div className='text-center mt-3'>
                 <input
                     type="text"
                     placeholder="Search"
+                    className='border-4 border-purple-400 px-16 outline-none'
                     value={searchText}
                     onChange={(e) => setSearchText(e.target.value)}
                 />
-                <button className='search-btn' onClick={() =>
+                <button className='ml-2 bg-red-400 rounded-sm p-1' onClick={() =>
                     searchData(searchText, allRestuarant)
                 }>Search</button>
             </div>
             {allRestuarant.length === 0 ?
-                (<ShimmerSimpleGallery card imageHeight={200} caption />) : (<div className='cards'>
-                    {(filterredData === null ? filteredData : filterredData).map
-                        ((restaurant) => (
-                            <Link
-                                to={"/restaurant/" + restaurant?.info?.id}
-                                key={restaurant?.info?.id}>
-                                <RestaurantCard  {...restaurant?.info} />
-                            </Link>
-                        ))}
-                </div>)}
+                (<ShimmerSimpleGallery card imageHeight={200} caption />) : (
+                    <div className='flex flex-wrap mt-[30px]'>
+                        {(filterredData === null ? filteredData : filterredData).map
+                            ((restaurant) => (
+                                <Link
+                                    to={"/restaurant/" + restaurant?.info?.id}
+                                    key={restaurant?.info?.id}>
+                                    <RestaurantCard  {...restaurant?.info} />
+                                </Link>
+                            ))}
+                    </div>)}
         </>
     );
 };
